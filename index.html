@@ -17,36 +17,18 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    height:100vh;
     overflow:hidden;
 }
 
-#contenedor{
-    position:relative;
-    width:100%;
-    max-width:1200px;
-}
-
-#fondo{
-    width:100%;
-    display:block;
-}
-
 #playBtn{
-    position:absolute;
-
-    /* POSICIÓN DEL BOTÓN */
-    top:58%;
-    left:84%;
-
-    transform:translate(-50%,-50%);
     cursor:pointer;
-
     width:80px;
     transition:.3s;
 }
 
 #playBtn:hover{
-    transform:translate(-50%,-50%) scale(1.08);
+    transform:scale(1.08);
 }
 
 #playBtn img{
@@ -63,14 +45,8 @@ audio{
 
 <body>
 
-<div id="contenedor">
-
-    <img id="fondo" src="banner.jpg.png" alt="Invitación">
-
-    <div id="playBtn">
-        <img src="play.png.png" alt="Play">
-    </div>
-
+<div id="playBtn">
+    <img src="play.png.png" alt="Play">
 </div>
 
 <audio id="audio" preload="auto" loop>
